@@ -1,8 +1,8 @@
 package org.example;
 
 
-//import lombok.AllArgsConstructor;
-//import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -55,13 +55,14 @@ public class StreamsTest {
 
     }
 
-    //@Data
-    //@AllArgsConstuctor
+    @Data
+    @AllArgsConstructor
     public static class Personne {
            public String Nom ;
            public String Prenom ;
            public int Age ;
            List<String> DeuxiemePrenom ;
+
            public Personne (String Nom, String Prenom, List<String> DeuxiemePrenom , int Age ){
                 this.Nom    = Nom ;
                 this.Prenom = Prenom ;
@@ -69,7 +70,9 @@ public class StreamsTest {
                 this.DeuxiemePrenom = DeuxiemePrenom ;
            }
 
-        public String getNom(){
+
+
+ /*       public String getNom(){
             return Nom ;
         }
 
@@ -93,8 +96,6 @@ public class StreamsTest {
             this.DeuxiemePrenom = DeuxiemePrenom;
         }
 
-
-
         public int getAge(){
             return Age;
         }
@@ -102,16 +103,26 @@ public class StreamsTest {
         public void setAge (int Age){
             this.Age = Age ;
         }
+
+        */
+
     }
 
+
+    @Data
+    @AllArgsConstructor
     public static class Personne2 {
         public String Nom ;
         public String Prenom ;
+       /*
         public Personne2 (String Nom, String Prenom){
             this.Nom    = Nom ;
             this.Prenom = Prenom ;
         }
+        */
 
+
+       /*
         public String getNom(){
             return Nom ;
         }
@@ -127,6 +138,8 @@ public class StreamsTest {
         public void setPrenom (String Prenom){
             this.Prenom = Prenom ;
         }
+        */
+
 
     }
 }
